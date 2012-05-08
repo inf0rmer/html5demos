@@ -5,7 +5,7 @@ $(function() {
 	
 	// A config object for miscellaneous configurations
 	var config = {
-		rootURL: 'http://localhost/~brunoabrantes/frontend_dev_trends/'
+		rootURL: 'http://frontendtoday.com/edit/demos/'
 	}
 	
 	// Create Demo Model - use it to store info about a specific demo.

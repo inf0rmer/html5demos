@@ -1,0 +1,18 @@
+# html5 pushstate (history) support:
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !assets/
+    RewriteCond %{REQUEST_URI} !index
+    RewriteRule (.*) index.html [L]
+</ifModule>
+
+AddType video/ogg .ogv 
+AddType video/ogg .ogg 
+AddType video/mp4 .mp4 
+AddType video/webm .webm
+
+AddType audio/mp3 .mp3
+AddType audio/wav .wav
