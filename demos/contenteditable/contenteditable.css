@@ -1,0 +1,16 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+*[contenteditable] {
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-ms-transition: .2s ease;
+	-o-transition: .2s ease;
+	transition: .2s ease;
+}
+
+*[contenteditable]:hover {
+	background: #EFEFEF;
+}
