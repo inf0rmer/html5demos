@@ -1,3 +1,11 @@
+a {
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+	-ms-transition: .2s ease;
+	-o-transition: .2s ease;
+	transition: .2s ease;
+}
+
 #demo-viewport iframe {
 	height: 500px;
 	margin: 15px 0 0 0;
@@ -14,4 +22,8 @@
 
 #demo-viewport .editing form {
 	display: block;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover {
+	border-radius: 10px;
 }
