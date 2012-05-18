@@ -5,7 +5,7 @@ $(function() {
 	
 	// A config object for miscellaneous configurations
 	var config = {
-		rootURL: 'http://frontendtoday.com/edit/demos/'
+		rootURL: 'http://localhost/~brunoabrantes/html5demos/'
 	}
 	
 	// Create Demo Model - use it to store info about a specific demo.
@@ -123,7 +123,7 @@ $(function() {
 		render: function() {
 			// We need to modify the model data for rendering, because of URLs. We store the data temporarily in an object, alter it and pass that into the template function.
 			var data = this.model.toJSON();
-			data.link = config.rootURL + data.link;
+			data.file = config.rootURL + data.file;
 			
 			this.$el.html(this.template(data));
 			return this;
@@ -198,11 +198,11 @@ $(function() {
 	var AppRouter = Backbone.Router.extend({
 		
 		routes: {
-			"demos/:title": "viewDemo"
+			"view/:title": "viewDemo"
 		},
 		
 		viewDemo: function(title) {
-			var demo = Demos.where({link: 'demos/' + title})[0];
+			var demo = Demos.where({link: 'view/' + title})[0];
 			// Create the detail view
 			var detailView = new DemoDetailView({model: demo});
 			App.$el.find('#demo-viewport').html(detailView.render().el);

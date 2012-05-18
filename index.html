@@ -1,3 +1,5 @@
+<!-- Hey there! You can get this project's source code at https://github.com/inf0rmer/html5demos -->
+
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -53,7 +55,7 @@
 		  	</div>
 		
 		  <section id="demo-viewport" class="span9">
-			<p>Click one of the demos on the left-side menu to run it.</p>
+			<p>Click one of the demos on the menu to run it.</p>
 		  </section>
 		</div>
 	  </div>
@@ -87,7 +89,7 @@
 	  	<input class="edit" type="text" value="<%= title %>" placeholder="Demo Title" />
   		<input class="edit btn btn-primary submit" type="submit" value="OK" />
   	</form>
-  	<iframe class="span9" frameborder="0" src="<%= link %>"></iframe>
+  	<iframe class="span9" frameborder="0" src="<%= file %>"></iframe>
   </script>
   <script type="text/template" id="app-count-template">
   	There are <%= demos %> demo(s) available.
@@ -101,23 +103,38 @@
 		Demos.reset([
 			{
 				title: 'Geolocation',
-				link: 'view/geolocation'
+				link: 'view/geolocation',
+				file: 'demos/geolocation'
 			},
 			{
 				title: 'Video',
-				link: 'view/video'
+				link: 'view/video',
+				file: 'demos/video'
 			},
 			{
 				title: 'Audio',
-				link: 'view/audio'
+				link: 'view/audio',
+				file: 'demos/audio'
 			},
 			{
 				title: 'Storage',
-				link: 'view/storage'
+				link: 'view/storage',
+				file: 'demos/storage'
 			},
 			{
 				title: 'Content Editable',
-				link: 'view/contenteditable'
+				link: 'view/contenteditable',
+				file: 'demos/contenteditable'
+			},
+			{
+				title: 'Canvas Pie Chart',
+				link: 'view/canvaspie',
+				file: 'demos/canvas'
+			},
+			{
+				title: 'Canvas Animation',
+				link: 'view/canvasanimation',
+				file: 'demos/canvasanimation'
 			}
 		]);
   	});
