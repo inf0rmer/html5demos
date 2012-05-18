@@ -24,6 +24,6 @@ a {
 	display: block;
 }
 
-.nav-list > .active > a, .nav-list > .active > a:hover {
+.nav-list > .active > a, .nav > li > a:hover, .nav-list > .active > a:hover {
 	border-radius: 10px;
 }
